@@ -9,4 +9,4 @@ def demo2():
 try:
     print(demo2())
 except Exception as result:
-    print("未知错误 %s" % result)
+    print(f"未知错误 {result}")

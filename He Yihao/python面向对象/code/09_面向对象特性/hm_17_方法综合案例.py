@@ -15,7 +15,7 @@ class Game(object):
         print("历史记录 %d" % cls.top_score)
 
     def start_game(self):
-        print("%s 开始游戏啦..." % self.player_name)
+        print(f"{self.player_name} 开始游戏啦...")
 
 # 1. 查看游戏的帮助信息
 Game.show_help()

@@ -16,7 +16,7 @@ class Gun:
 
         # 1. 判断子弹数量
         if self.bullet_count <= 0:
-            print("[%s] 没有子弹了..." % self.model)
+            print(f"[{self.model}] 没有子弹了...")
 
             return
 

@@ -1,2 +1,2 @@
 def send(text):
-    print("正在发送 %s..." % text)
+    print(f"正在发送 {text}...")

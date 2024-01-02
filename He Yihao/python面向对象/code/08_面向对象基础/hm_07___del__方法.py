@@ -4,11 +4,11 @@ class Cat:
 
         self.name = new_name
 
-        print("%s 来了" % self.name)
+        print(f"{self.name} 来了")
 
     def __del__(self):
 
-        print("%s 我去了" % self.name)
+        print(f"{self.name} 我去了")
 
 # tom 是一个全局变量
 tom = Cat("Tom")

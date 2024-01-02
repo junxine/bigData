@@ -95,10 +95,8 @@ class Hero(GameSprite):
         self.rect.left += self.speed
 
         # 超出屏幕检测
-        if self.rect.left < 0:
-            self.rect.left = 0
-        if self.rect.right > SCREEN_RECT.right:
-            self.rect.right = SCREEN_RECT.right
+        self.rect.left = max(self.rect.left, 0)
+        self.rect.right = min(self.rect.right, SCREEN_RECT.right)
 
     def fire(self):
 

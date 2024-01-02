@@ -72,7 +72,7 @@ class PlaneGame:
                 enemy.destroied()
 
         # 敌机撞毁英雄
-        for hero in pygame.sprite.spritecollide(self.hero,
+        for _ in pygame.sprite.spritecollide(self.hero,
                                                 self.enemy_group,
                                                 True):
             print("英雄牺牲了...")

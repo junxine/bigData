@@ -82,7 +82,6 @@ class PlaneGame(object):
 
         # 1. 子弹摧毁敌机
         pygame.sprite.groupcollide(self.hero.bullets, self.enemy_group, True, True)
-        pass
 
     def __update_sprites(self):
 

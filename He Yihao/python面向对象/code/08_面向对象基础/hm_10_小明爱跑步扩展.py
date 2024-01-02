@@ -11,12 +11,12 @@ class Person:
         return "我的名字叫 %s 体重是 %.2f 公斤" % (self.name, self.weight)
 
     def run(self):
-        print("%s 爱跑步，跑步锻炼身体" % self.name)
+        print(f"{self.name} 爱跑步，跑步锻炼身体")
 
         self.weight -= 0.5
 
     def eat(self):
-        print("%s 是吃货，吃完这顿再减肥" % self.name)
+        print(f"{self.name} 是吃货，吃完这顿再减肥")
 
         self.weight += 1
 

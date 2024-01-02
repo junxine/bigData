@@ -32,7 +32,7 @@ class House:
 
     def add_item(self, item):
 
-        print("要添加 %s" % item)
+        print(f"要添加 {item}")
 
 
 # 1. 创建家具

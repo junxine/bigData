@@ -79,4 +79,4 @@ class Enemy(GameSprite):
             self.kill()
 
     def __del__(self):
-        print("敌机挂了 %s" % self.rect)
+        print(f"敌机挂了 {self.rect}")

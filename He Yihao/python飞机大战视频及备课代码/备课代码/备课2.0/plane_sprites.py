@@ -20,11 +20,7 @@ class GameSprite(pygame.sprite.Sprite):
 
     @staticmethod
     def image_names(prefix, count):
-        names = []
-        for i in range(1, count + 1):
-            names.append("./images/" + prefix + str(i) + ".png")
-
-        return names
+        return [f"./images/{prefix}{str(i)}.png" for i in range(1, count + 1)]
 
 
 class Background(GameSprite):
@@ -134,10 +130,8 @@ class Hero(PlaneSprite):
         self.rect.left += self.speed
 
         # 超出屏幕检测
-        if self.rect.left < 0:
-            self.rect.left = 0
-        if self.rect.right > SCREEN_RECT.right:
-            self.rect.right = SCREEN_RECT.right
+        self.rect.left = max(self.rect.left, 0)
+        self.rect.right = min(self.rect.right, SCREEN_RECT.right)
 
     def fire(self):
         """发射子弹"""

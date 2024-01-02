@@ -33,6 +33,4 @@ while True:
 
     i += 1
 
-    pass
-
 pygame.quit()

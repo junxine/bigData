@@ -16,7 +16,7 @@ class Gun:
 
         # 1. 判断子弹数量
         if self.bullet_count <= 0:
-            print("[%s] 没有子弹了..." % self.model)
+            print(f"[{self.model}] 没有子弹了...")
 
             return
 
@@ -42,12 +42,12 @@ class Soldier:
         # 1. 判断士兵是否有枪
         # if self.gun == None:
         if self.gun is None:
-            print("[%s] 还没有枪..." % self.name)
+            print(f"[{self.name}] 还没有枪...")
 
             return
 
         # 2. 高喊口号
-        print("冲啊...[%s]" % self.name)
+        print(f"冲啊...[{self.name}]")
 
         # 3. 让枪装填子弹
         self.gun.add_bullet(50)

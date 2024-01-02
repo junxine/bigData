@@ -32,10 +32,10 @@ class House:
 
     def add_item(self, item):
 
-        print("要添加 %s" % item)
+        print(f"要添加 {item}")
         # 1. 判断家具的面积
         if item.area > self.free_area:
-            print("%s 的面积太大了，无法添加" % item.name)
+            print(f"{item.name} 的面积太大了，无法添加")
 
             return
 

@@ -29,7 +29,6 @@ class B(A):
 
         # 4. 调用父类的公有方法
         self.test()
-        pass
 
 # 创建一个子类对象
 b = B()

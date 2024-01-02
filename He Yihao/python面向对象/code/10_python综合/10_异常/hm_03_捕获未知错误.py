@@ -9,4 +9,4 @@ try:
 except ValueError:
     print("请输入正确的整数")
 except Exception as result:
-    print("未知错误 %s" % result)
+    print(f"未知错误 {result}")

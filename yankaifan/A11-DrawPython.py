@@ -2,9 +2,9 @@ from turtle import *
 
 def drawSnake(rad,angle,len,neckrad):            #rad：半径  angle：弧度值
 
-    for i in range(len):
-       circle(rad,angle)                 #turtle.circle()  圆形运行
-       circle(-rad,angle)
+    for _ in range(len):
+        circle(rad,angle)                 #turtle.circle()  圆形运行
+        circle(-rad,angle)
     circle(rad,angle/2)
     fd(rad)                               #turtle.fd()    直线运行
     circle(neckrad+1,180)

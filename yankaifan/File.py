@@ -1,16 +1,12 @@
 def rA():
-    f=open("E:\\时间简史.txt")
-    lines=f.readlines()
-    for line in lines:
-        print(line)
-    f.close()
+    with open("E:\\时间简史.txt") as f:
+        lines=f.readlines()
+        for line in lines:
+            print(line)
 def rB():
-    f = open("E:\\时间简史.txt")
-    line=f.readline()
-    while line:
-        print(line)
-        line=f.readline()
-    f.close()
+    with open("E:\\时间简史.txt") as f:
+        while line := f.readline():
+            print(line)
 def rC():
     for line in open("E:\\时间简史.txt"):
         print(line)

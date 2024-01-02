@@ -2,10 +2,10 @@ class Cat:
 
     def eat(self):
         # 哪一个对象调用的方法，self就是哪一个对象的引用
-        print("%s 爱吃鱼" % self.name)
+        print(f"{self.name} 爱吃鱼")
 
     def drink(self):
-        print("%s 要喝水" % self.name)
+        print(f"{self.name} 要喝水")
 
 
 # 创建猫对象

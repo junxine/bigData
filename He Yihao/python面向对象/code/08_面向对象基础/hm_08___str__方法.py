@@ -4,16 +4,16 @@ class Cat:
 
         self.name = new_name
 
-        print("%s 来了" % self.name)
+        print(f"{self.name} 来了")
 
     def __del__(self):
 
-        print("%s 我去了" % self.name)
+        print(f"{self.name} 我去了")
 
     def __str__(self):
 
         # 必须返回一个字符串
-        return "我是小猫[%s]" % self.name
+        return f"我是小猫[{self.name}]"
 
 # tom 是一个全局变量
 tom = Cat("Tom")

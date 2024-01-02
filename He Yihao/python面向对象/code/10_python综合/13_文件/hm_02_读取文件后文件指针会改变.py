@@ -1,16 +1,12 @@
 # 1. 打开文件
-file = open("README")
+with open("README") as file:
+    # 2. 读取文件内容
+    text = file.read()
+    print(text)
+    print(len(text))
 
-# 2. 读取文件内容
-text = file.read()
-print(text)
-print(len(text))
+    print("-" * 50)
 
-print("-" * 50)
-
-text = file.read()
-print(text)
-print(len(text))
-
-# 3. 关闭文件
-file.close()
+    text = file.read()
+    print(text)
+    print(len(text))
